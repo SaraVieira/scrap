@@ -1,14 +1,11 @@
 import { invoke } from "@tauri-apps/api/core";
 import { useState } from "react";
-import { Sidebar, SidebarBody, SidebarLink } from "./ui/sidebar";
-import {
-  IconBrandTabler,
-  IconSettings,
-  IconUserBolt,
-} from "@tabler/icons-react";
+import { Sidebar, SidebarBody, SidebarLink } from "./ui/Sidebar";
+import { IconHome, IconSettings } from "@tabler/icons-react";
 import { NavLink, Outlet } from "react-router";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toaster";
 
 export function Layout() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -20,22 +17,15 @@ export function Layout() {
   }
   const links = [
     {
-      label: "Dashboard",
-      href: "#",
+      label: "Home",
+      href: "/",
       icon: (
-        <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-      ),
-    },
-    {
-      label: "Profile",
-      href: "#",
-      icon: (
-        <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        <IconHome className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
     },
     {
       label: "Settings",
-      href: "#",
+      href: "/settings",
       icon: (
         <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
       ),
@@ -67,6 +57,7 @@ export function Layout() {
           <Outlet />
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }
