@@ -152,7 +152,12 @@ export const CONSOLES = [
   },
   {
     name: "Arcade",
-    folderNames: ["arcade", "ARCADE"],
+    folderNames: [
+      "arcade",
+      "ARCADE",
+      "Arcade (FBNEO)",
+      "Vertical Arcade (VARCADE)",
+    ],
     extensions: [".app", ".cmd", ".sh", ".7z", ".zip"],
     icon: "",
   },
@@ -459,7 +464,7 @@ export const CONSOLES = [
   },
   {
     name: "Sega Dreamcast",
-    folderNames: ["dreamcast"],
+    folderNames: ["dreamcast", "Sega Dreamcast (DC)"],
     icon: "",
   },
   {
@@ -469,7 +474,7 @@ export const CONSOLES = [
   },
   {
     name: "NES",
-    folderNames: ["nes", "famicon", "FC"],
+    folderNames: ["nes", "famicon", "FC", "Nintendo Entertainment System (FC)"],
     extensions: [".fds", ".nes", ".unf", ".unif", ".7z", ".zip"],
     icon: "",
   },
@@ -490,7 +495,7 @@ export const CONSOLES = [
   },
   {
     name: "Sony Playstation Portable",
-    folderNames: ["psp"],
+    folderNames: ["psp", "PlayStation Portable (PSP)"],
     icon: "",
   },
   {
@@ -500,7 +505,7 @@ export const CONSOLES = [
   },
   {
     name: "Sony Playstation",
-    folderNames: ["psx", "PS"],
+    folderNames: ["psx", "PS", "Sony PlayStation (PS)", "PS1"],
     icon: "",
   },
   {
@@ -515,7 +520,13 @@ export const CONSOLES = [
   },
   {
     name: "Sega Genesis/Mega Drive",
-    folderNames: ["genesis", "megadrive", "megadrivejp", "MD"],
+    folderNames: [
+      "genesis",
+      "megadrive",
+      "megadrivejp",
+      "MD",
+      "Sega Genesis (MD)",
+    ],
     icon: "",
   },
   {
@@ -554,7 +565,7 @@ export const CONSOLES = [
     icon: "",
   },
   {
-    name: "Nintendo Famicom Disk System",
+    name: "Game & Watch",
     folderNames: ["gameandwatch", "GW"],
     icon: "",
   },
@@ -610,12 +621,12 @@ export const CONSOLES = [
   },
   {
     name: "Nintendo DS",
-    folderNames: ["ds", "DS"],
+    folderNames: ["ds", "DS", "Nintendo DS (NDS)"],
     icon: "",
   },
   {
     name: "Nintendo 64",
-    folderNames: ["n64"],
+    folderNames: ["n64", "Nintendo 64 (N64)"],
     icon: "",
   },
   {
@@ -770,7 +781,7 @@ export const CONSOLES = [
   },
   {
     name: "Nintendo Virtual Boy",
-    folderNames: ["virtualboy", "VB"],
+    folderNames: ["virtualboy", "VB", "Virtual Boy (VB)"],
     icon: "",
   },
   {
@@ -820,12 +831,14 @@ export const CONSOLES = [
   },
   {
     name: "Super Nintendo",
-    folderNames: ["snes", "snesna", "sfc", "SFC"],
-    icon: "",
-  },
-  {
-    name: "NEC TurboGrafx-CD",
-    folderNames: ["tg-cd", "PCECD"],
+    folderNames: [
+      "snes",
+      "snesna",
+      "sfc",
+      "SFC",
+      "Super Nintendo Entertainment System (SFC)",
+      "Super Nintendo Entertainment System (SUPA)",
+    ],
     icon: "",
   },
   {
@@ -850,12 +863,12 @@ export const CONSOLES = [
   },
   {
     name: "PICO-8 Fantasy Console",
-    folderNames: ["pico8", "PICO"],
+    folderNames: ["pico8", "PICO", "Pico-8 (P8)"],
     icon: "",
   },
   {
     name: "Nintendo Pokémon Mini",
-    folderNames: ["pokemini", "POKE"],
+    folderNames: ["pokemini", "POKE", "Pokémon mini (PKM)"],
     icon: "",
   },
   {
@@ -865,22 +878,27 @@ export const CONSOLES = [
   },
   {
     name: "Sega Game Gear",
-    folderNames: ["gamegear", "GG"],
+    folderNames: ["gamegear", "GG", "Sega Game Gear (GG)"],
     icon: "",
   },
   {
     name: "Nintendo Game Boy",
-    folderNames: ["gb", "GB"],
+    folderNames: ["gb", "GB", "Game Boy (GB)"],
     icon: "",
   },
   {
     name: "Nintendo Game Boy Advance",
-    folderNames: ["gba", "GBA"],
+    folderNames: [
+      "gba",
+      "GBA",
+      "Game Boy Advance (GBA)",
+      "Game Boy Advance (MGBA)",
+    ],
     icon: "",
   },
   {
     name: "Nintendo Game Boy Color",
-    folderNames: ["gbc", "GBC"],
+    folderNames: ["gbc", "GBC", "Game Boy Color (GBC)"],
     icon: "",
   },
   {
@@ -895,7 +913,7 @@ export const CONSOLES = [
   },
   {
     name: "Sega Master System",
-    folderNames: ["mastersystem", "MS"],
+    folderNames: ["mastersystem", "MS", "Sega Master System (SMS)", "SMS"],
     icon: "",
   },
   {
@@ -955,12 +973,17 @@ export const CONSOLES = [
   },
   {
     name: "NEC TurboGrafx-16",
-    folderNames: ["tg16", "pcengine", "PCE"],
+    folderNames: [
+      "tg16",
+      "pcengine",
+      "PCE",
+      "/Volumes/FLIP/Roms/TurboGrafx-16 (PCE)",
+    ],
     icon: "",
   },
   {
     name: "NEC TurboGrafx CD",
-    folderNames: ["pcenginecd", "PCECD"],
+    folderNames: ["pcenginecd", "PCECD", "tg-cd"],
     icon: "",
   },
   {
@@ -990,7 +1013,7 @@ export const CONSOLES = [
   },
   {
     name: "SNK Neo Geo Pocket Color",
-    folderNames: ["ngpc", "NGP"],
+    folderNames: ["ngpc", "NGP", "Neo Geo Pocket Color (NGPC)"],
     icon: "",
   },
   {
@@ -1010,7 +1033,7 @@ export const CONSOLES = [
   },
   {
     name: "Nintendo Super Game Boy",
-    folderNames: ["sgb", "SGB"],
+    folderNames: ["sgb", "SGB", "Super Game Boy (SGB)"],
     icon: "",
   },
 ];
