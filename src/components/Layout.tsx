@@ -1,4 +1,3 @@
-import { invoke } from "@tauri-apps/api/core";
 import { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/Sidebar";
 import { IconHome, IconSettings } from "@tabler/icons-react";
@@ -8,13 +7,6 @@ import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 
 export function Layout() {
-  const [greetMsg, setGreetMsg] = useState("");
-  const [name, setName] = useState("");
-
-  async function greet() {
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    setGreetMsg(await invoke("greet", { name }));
-  }
   const links = [
     {
       label: "Home",

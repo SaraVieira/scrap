@@ -1,24 +1,13 @@
-// Dummy dashboard component with content
+import { Button } from "@/components/ui/button";
+import { useScrapeStore } from "@/lib/stores/scrape";
+
 export const Home = () => {
+  const { getFolders, folders, folderNames } = useScrapeStore();
   return (
     <>
-      sup
-      <div className="flex gap-2">
-        {[...new Array(4)].map((i) => (
-          <div
-            key={"first" + i}
-            className="h-20 w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
-          ></div>
-        ))}
-      </div>
-      <div className="flex gap-2 flex-1">
-        {[...new Array(2)].map((i) => (
-          <div
-            key={"second" + i}
-            className="h-full w-full rounded-lg  bg-gray-100 dark:bg-neutral-800 animate-pulse"
-          ></div>
-        ))}
-      </div>
+      <Button onClick={getFolders}>Open me</Button>
+      {JSON.stringify(folders, null, 2)}
+      {JSON.stringify(folderNames, null, 2)}
     </>
   );
 };
