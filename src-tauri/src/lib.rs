@@ -1,3 +1,4 @@
+use serde::{Deserialize, Serialize};
 use std::fs::{self, metadata};
 use std::path::{Path, PathBuf};
 
@@ -20,8 +21,14 @@ fn _list_files(vec: &mut Vec<PathBuf>, path: &Path) {
     }
 }
 
+#[derive(Serialize, Deserialize, Debug)]
+struct Folders {
+    name: String,
+    path: PathBuf,
+}
+
 #[tauri::command]
-fn list_folders(path: &str) -> Vec<PathBuf> {
+fn list_folders(path: &str) -> Vec<Folders> {
     let mut vec = Vec::new();
 
     if metadata(Path::new(path)).unwrap().is_dir() {
@@ -29,11 +36,14 @@ fn list_folders(path: &str) -> Vec<PathBuf> {
         for path_result in paths {
             let full_path = path_result.unwrap().path();
             if metadata(&full_path).unwrap().is_dir() {
-                vec.push(full_path);
+                let name = full_path.file_name().unwrap().to_str().unwrap().to_string();
+                vec.push(Folders {
+                    name,
+                    path: full_path.clone(),
+                });
             }
         }
     }
-
     vec
 }
 
