@@ -1,7 +1,7 @@
 import { invoke } from "@tauri-apps/api/core";
 import { open } from "@tauri-apps/plugin-dialog";
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { createJSONStorage, persist } from "zustand/middleware";
 import { CONSOLES } from "../consoles";
 
 export interface FolderMapping {
@@ -80,6 +80,6 @@ export const useScrapeStore = create<ScrapeStore>()(
         });
       },
     }),
-    { name: "scrape-storage" }
+    { name: "scrape-storage", storage: createJSONStorage(() => sessionStorage) }
   )
 );
