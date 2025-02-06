@@ -27,6 +27,7 @@ type ScrapeStoreActions = {
     path: string
   ) => void;
   removeFolder: (path: string) => void;
+  startScrapping: () => void;
 };
 
 type ScrapeStore = ScrapeStoreState & ScrapeStoreActions;
@@ -48,6 +49,12 @@ export const useScrapeStore = create<ScrapeStore>()(
       removeFolder: (path: string) => {
         set({
           folders: get().folders.filter((f) => f.path !== path),
+        });
+      },
+      startScrapping: async () => {
+        const folders = get().folders;
+        await invoke("scrape", {
+          folders,
         });
       },
       getFolders: async () => {

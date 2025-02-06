@@ -5,7 +5,7 @@ import { useScrapeStore } from "@/lib/stores/scrape";
 import { useEffect, useState } from "react";
 
 export const Home = () => {
-  const { getFolders, folders } = useScrapeStore();
+  const { getFolders, folders, startScrapping } = useScrapeStore();
   const [step, setStep] = useState(1);
 
   const move = async () => {
@@ -16,6 +16,7 @@ export const Home = () => {
   useEffect(() => {
     if (folders.length) setStep(2);
   }, []);
+
   return (
     <>
       <div className="mb-12">
@@ -25,7 +26,7 @@ export const Home = () => {
       {step === 1 ? (
         <Button onClick={move}>Select your rom folder</Button>
       ) : null}
-      {step === 2 && <FolderMapper nextStep={console.log} />}
+      {step === 2 && <FolderMapper nextStep={startScrapping} />}
     </>
   );
 };

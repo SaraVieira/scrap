@@ -17,7 +17,6 @@ export default function FolderMapper({ nextStep }: { nextStep: () => void }) {
         {folders.map(({ name, path, mapping }) => (
           <li key={path} className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              {mapping?.icon}
               {mapping?.icon && <img src={mapping.icon} />}
 
               <span className="font-medium">{name}</span>
