@@ -64,3 +64,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+html,
+body {
+  @apply max-h-screen overflow-hidden;
+}
