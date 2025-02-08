@@ -453,7 +453,7 @@ export const CONSOLES = [
     name: "Microsoft Xbox",
     extensions: ["zip", "7z", "iso"],
     folderNames: ["xbox", "microsoft xbox"],
-    icon: "/consoles/",
+    icon: "/consoles/xbox03.png",
   },
   {
     gamesdb_id: 15,
@@ -461,7 +461,7 @@ export const CONSOLES = [
     extensions: ["zip", "7z", "iso"],
     name: "Microsoft Xbox 360",
     folderNames: ["xbox 360", "microsoft xbox 360"],
-    icon: "/consoles/xbox01.png",
+    icon: "/consoles/xbox360s01.png",
   },
   {
     gamesdb_id: 4920,
@@ -657,7 +657,7 @@ export const CONSOLES = [
       "wswan color",
       "ws",
     ],
-    icon: "/consoles/wonderswan_04.png",
+    icon: "/consoles/wscolor01.png",
   },
   {
     gamesdb_id: 31,
@@ -2508,4 +2508,4 @@ export const CONSOLES = [
     folderNames: ["prboom", "port"],
     icon: "",
   },
-];
+]
