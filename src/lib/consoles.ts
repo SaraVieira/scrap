@@ -66,7 +66,7 @@ export const CONSOLES = [
       "super nintendo entertainment system",
       "nintendo super famicom",
     ],
-    icon: "/consoles/Snes.png",
+    icon: "/consoles/snes.png",
   },
   {
     screenscrapper_id: 6,
@@ -179,7 +179,7 @@ export const CONSOLES = [
       "vb",
       "virtual boy (vb)",
     ],
-    icon: "/consoles/VirtualBoy.png",
+    icon: "/consoles/virtualboy.png",
   },
   {
     screenscrapper_id: 12,
@@ -214,7 +214,7 @@ export const CONSOLES = [
       "nintendo gc",
       "ngc",
     ],
-    icon: "/consoles/Logo_NintendoGameCube.png",
+    icon: "/consoles/ngc_orange01.png",
   },
   {
     gamesdb_id: 3,
@@ -238,7 +238,7 @@ export const CONSOLES = [
       "nintendo ds (nds)",
       "dsi",
     ],
-    icon: "/consoles/NintendoDSi04b.png",
+    icon: "/consoles/nintendodsi04b.png",
   },
   {
     screenscrapper_id: 16,
@@ -246,7 +246,7 @@ export const CONSOLES = [
     name: "Nintendo Wii",
     extensions: ["zip", "7z", "iso", "ciso", "wad", "wbfs"],
     folderNames: ["wii", "nintendo wii"],
-    icon: "/consoles/Wii.png",
+    icon: "/consoles/wii.png",
   },
   {
     gamesdb_id: 4912,
@@ -254,7 +254,7 @@ export const CONSOLES = [
     extensions: ["zip", "7z", "3ds"],
     name: "Nintendo 3DS",
     folderNames: ["nintendo 3ds", "3ds", "2ds", "n3ds"],
-    icon: "/consoles/Nintendo3DS_c01.png",
+    icon: "/consoles/nintendo3ds_c01.png",
   },
   {
     screenscrapper_id: 18,
@@ -297,7 +297,7 @@ export const CONSOLES = [
       "32x",
       "thirtytwox",
     ],
-    icon: "/consoles/32x_genesis2.png",
+    icon: "/consoles/md_super32x02.png",
   },
   {
     gamesdb_id: 21,
@@ -316,7 +316,7 @@ export const CONSOLES = [
       "wav",
     ],
     folderNames: ["mega-cd", "sega cd", "megacd", "megacdjp", "segacd"],
-    icon: "/consoles/MegaCd202.png",
+    icon: "/consoles/megacd202.png",
   },
   {
     gamesdb_id: 20,
@@ -339,7 +339,7 @@ export const CONSOLES = [
     name: "Sega Saturn",
     extensions: ["zip", "7z", "chd", "cue", "bin", "mdf", "iso", "m3u"],
     folderNames: ["saturn", "sega saturn"],
-    icon: "/consoles/Ss_Vsaturn.png",
+    icon: "/consoles/ss_vsaturn.png",
   },
   {
     gamesdb_id: 16,
@@ -366,7 +366,7 @@ export const CONSOLES = [
       "sega dc",
       "dc",
     ],
-    icon: "/consoles/DC3.png",
+    icon: "/consoles/dc3.png",
   },
   {
     gamesdb_id: 4922,
@@ -382,7 +382,7 @@ export const CONSOLES = [
       "snk ngp",
       "gp",
     ],
-    icon: "/consoles/NeoGeoPocket_com.png",
+    icon: "/consoles/neogeopocket_com.png",
   },
   {
     gamesdb_id: 22,
@@ -398,7 +398,7 @@ export const CONSOLES = [
     name: "Atari Jaguar",
     extensions: ["zip", "7z", "j64", "jag", "cof", "bin", "rom", "abs"],
     folderNames: ["jaguar", "atarijaguar", "atari jaguar"],
-    icon: "/consoles/Jaguar02.png",
+    icon: "/consoles/jaguar02.png",
   },
   {
     gamesdb_id: 4924,
@@ -406,7 +406,7 @@ export const CONSOLES = [
     name: "Atari Lynx",
     extensions: ["zip", "7z", "bin", "lnx", "o"],
     folderNames: ["lynx", "atarilynx", "atari lynx"],
-    icon: "/consoles/Lynx.png",
+    icon: "/consoles/lynx.png",
   },
   {
     screenscrapper_id: 29,
@@ -420,7 +420,7 @@ export const CONSOLES = [
       "panasonic 3do interactive multiplayer",
       "panasonic",
     ],
-    icon: "/consoles/3DO_Real.png",
+    icon: "/consoles/3do_real.png",
   },
   {
     gamesdb_id: 4938,
@@ -445,7 +445,7 @@ export const CONSOLES = [
       "nec turbografx-16",
       "nec pc engine",
     ],
-    icon: "/consoles/TurboGrafx01.png",
+    icon: "/consoles/turbografx01.png",
   },
   {
     gamesdb_id: 14,
@@ -461,7 +461,7 @@ export const CONSOLES = [
     extensions: ["zip", "7z", "iso"],
     name: "Microsoft Xbox 360",
     folderNames: ["xbox 360", "microsoft xbox 360"],
-    icon: "/consoles/Xbox01.png",
+    icon: "/consoles/xbox01.png",
   },
   {
     gamesdb_id: 4920,
@@ -642,7 +642,7 @@ export const CONSOLES = [
       "wswan",
       "ws",
     ],
-    icon: "/consoles/WonderSwan_04.png",
+    icon: "/consoles/wonderswan_04.png",
   },
   {
     screenscrapper_id: 46,
@@ -657,7 +657,7 @@ export const CONSOLES = [
       "wswan color",
       "ws",
     ],
-    icon: "/consoles/WonderSwan_04.png",
+    icon: "/consoles/wonderswan_04.png",
   },
   {
     gamesdb_id: 31,
@@ -687,7 +687,7 @@ export const CONSOLES = [
       "pc-engine duo",
       "pce duo",
     ],
-    icon: "/consoles/Pce_Duo.png",
+    icon: "/consoles/pce_duo.png",
   },
   {
     gamesdb_id: 4950,
@@ -706,7 +706,7 @@ export const CONSOLES = [
       "game'n'watch",
       "g&w",
     ],
-    icon: "/consoles/Gaw.png",
+    icon: "/consoles/gaw.png",
   },
   {
     screenscrapper_id: 53,
@@ -757,7 +757,7 @@ export const CONSOLES = [
       "sony playstation (ps)",
       "ps1",
     ],
-    icon: "/consoles/Ps01.png",
+    icon: "/consoles/ps01.png",
   },
   {
     gamesdb_id: 11,
@@ -772,7 +772,7 @@ export const CONSOLES = [
       "sony playstation ii",
       "playstation ii",
     ],
-    icon: "/consoles/Ps2_07.png",
+    icon: "/consoles/ps2_07.png",
   },
   {
     gamesdb_id: 12,
@@ -787,7 +787,7 @@ export const CONSOLES = [
       "sony playstation iii",
       "playstation iii",
     ],
-    icon: "/consoles/Ps3_02_30g.png",
+    icon: "/consoles/ps3_02_30g.png",
   },
   {
     gamesdb_id: 4919,
@@ -818,7 +818,7 @@ export const CONSOLES = [
       "sony ps portable",
       "ps portable",
     ],
-    icon: "/consoles/Psp_01.png",
+    icon: "/consoles/psp_01.png",
   },
   {
     gamesdb_id: 39,
@@ -979,7 +979,7 @@ export const CONSOLES = [
       "epoch super cassette vision",
       "yeno super cassette vision",
     ],
-    icon: "/consoles/SuperCasettevision1.png",
+    icon: "/consoles/supercasettevision1.png",
   },
   {
     name: "SNK NEO GEO MVS",
@@ -1003,7 +1003,7 @@ export const CONSOLES = [
       "neogeocdjp",
       "neocd",
     ],
-    icon: "/consoles/NeoGeoCdz.png",
+    icon: "/consoles/neogeocdz.png",
   },
   {
     gamesdb_id: 4930,
@@ -1011,7 +1011,7 @@ export const CONSOLES = [
     name: "NEC PC-FX",
     extensions: ["zip", "7z", "bin", "chd", "ccd", "img", "sub", "cue"],
     folderNames: ["pc-fx", "pcfx", "nec pc-fx"],
-    icon: "/consoles/PcFx01.png",
+    icon: "/consoles/pcfx01.png",
   },
   {
     gamesdb_id: 4945,
@@ -1150,7 +1150,7 @@ export const CONSOLES = [
       "neo-geo pc",
       "snk ngpc",
     ],
-    icon: "/consoles/NeoGeoPocket_b.png",
+    icon: "/consoles/neogeopocket_b.png",
   },
   {
     name: "Aamber Pegasus",
@@ -1224,7 +1224,7 @@ export const CONSOLES = [
       "lynx 96",
       "lynx 128",
     ],
-    icon: "/consoles/Lynx.png",
+    icon: "/consoles/lynx.png",
   },
   {
     name: "Coleco Adam",
@@ -1433,7 +1433,7 @@ export const CONSOLES = [
     screenscrapper_id: 101,
     extensions: ["zip", "7z", "fpk", "smc"],
     folderNames: ["gp32", "gamepark 32", "game park 32"],
-    icon: "/consoles/GP32.png",
+    icon: "/consoles/gp32.png",
   },
   {
     gamesdb_id: 4939,
@@ -1520,7 +1520,7 @@ export const CONSOLES = [
       "c7420",
       "g7401",
     ],
-    icon: "/consoles/Odyssey01.png",
+    icon: "/consoles/odyssey01.png",
   },
   {
     screenscrapper_id: 105,
@@ -1534,7 +1534,7 @@ export const CONSOLES = [
       "nec pc engine supergrafx",
       "sgfx",
     ],
-    icon: "/consoles/Pce_SuperGrafx01.png",
+    icon: "/consoles/pce_supergrafx01.png",
   },
   {
     screenscrapper_id: 106,
@@ -1560,7 +1560,7 @@ export const CONSOLES = [
       "fcd",
       "fkds",
     ],
-    icon: "/consoles/Fc_DiskSystem02.png",
+    icon: "/consoles/fc_disksystem02.png",
   },
   {
     screenscrapper_id: 107,
@@ -1600,7 +1600,7 @@ export const CONSOLES = [
       "othello multivisio",
       "segasgone",
     ],
-    icon: "/consoles/Sg-1000b.png",
+    icon: "/consoles/sg-1000b.png",
   },
   {
     gamesdb_id: 4911,
@@ -1657,7 +1657,7 @@ export const CONSOLES = [
       "nec pc engine cd",
       "pc engine cd",
     ],
-    icon: "/consoles/Pce_Cdrom.png",
+    icon: "/consoles/pce_cdrom.png",
   },
   {
     screenscrapper_id: 115,
@@ -1731,7 +1731,7 @@ export const CONSOLES = [
       "gameboy advance e-reader",
       "gb advance e-reader",
     ],
-    icon: "/consoles/Gba008.png",
+    icon: "/consoles/gba008.png",
     extensions: ["zip", "7z"],
   },
   {
@@ -1763,7 +1763,7 @@ export const CONSOLES = [
       "n64 dd",
       "64 dd",
     ],
-    icon: "/consoles/N64Dd01.png",
+    icon: "/consoles/n64dd01.png",
   },
   {
     screenscrapper_id: 123,
@@ -1855,7 +1855,7 @@ export const CONSOLES = [
       "commodore amiga cd32",
       " amiga cd32",
     ],
-    icon: "/consoles/AmigaCd32.png",
+    icon: "/consoles/amigacd32.png",
   },
   {
     screenscrapper_id: 131,
@@ -2133,7 +2133,7 @@ export const CONSOLES = [
       "atari jaguar cd-rom",
       "jaguar cd-rom",
     ],
-    icon: "/consoles/JaguarCd.png",
+    icon: "/consoles/jaguarcd.png",
   },
   {
     name: "Sony Playstation Minis",
@@ -2148,7 +2148,7 @@ export const CONSOLES = [
       "sony ps minis",
       "ps minis",
     ],
-    icon: "/consoles/Ps_PokeSta01.png",
+    icon: "/consoles/ps_pokesta01.png",
   },
   {
     name: "Arcade",
@@ -2247,7 +2247,7 @@ export const CONSOLES = [
     gamesdb_id: 4934,
     name: "NEC PC-9800 Series",
     folderNames: ["nec pc-9801", "pc98", "pc9801"],
-    icon: "/consoles/PcFx02.png",
+    icon: "/consoles/pcfx02.png",
   },
   {
     gamesdb_id: 4957,
@@ -2262,7 +2262,7 @@ export const CONSOLES = [
       "pokémon mini (pkm)",
       "poke",
     ],
-    icon: "/consoles/PokemonMini_Pink.png",
+    icon: "/consoles/pokemonmini_pink.png",
   },
   {
     gamesdb_id: 4979,
@@ -2342,7 +2342,7 @@ export const CONSOLES = [
     name: "NEC PC-8800 Series",
     extensions: ["zip", "7z", "d88", "88d", "m3u"],
     folderNames: ["nec pc-8801", "pc88"],
-    icon: "/consoles/PcFx02.png",
+    icon: "/consoles/pcfx02.png",
   },
   {
     screenscrapper_id: 222,
@@ -2420,14 +2420,14 @@ export const CONSOLES = [
     name: "Sega Pico",
     extensions: ["zip", "7z", "md"],
     folderNames: ["sega pico", "kids computer pico"],
-    icon: "/consoles/Picno.png",
+    icon: "/consoles/picno.png",
   },
   {
     screenscrapper_id: 253,
     name: "FM Towns",
     extensions: ["zip", "7z", "cue", "bin"],
     folderNames: ["fm towns", "fmtmarty"],
-    icon: "/consoles/FmMarty.png",
+    icon: "/consoles/fmmarty.png",
   },
   {
     screenscrapper_id: 258,
