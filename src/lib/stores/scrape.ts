@@ -11,14 +11,14 @@ export interface FolderMapping {
   mapping?: (typeof CONSOLES)[0];
 }
 
-type ScrapeStoreState = {
+export type ScrapeStoreState = {
   folders: {
-    name: string;
-    path: string;
-    mapping: (typeof CONSOLES)[0] | null;
-  }[];
-  mappings: FolderMapping[];
-};
+    name: string
+    path: string
+    mapping: (typeof CONSOLES)[0] | null
+  }[]
+  mappings: FolderMapping[]
+}
 
 type ScrapeStoreActions = {
   getFolders: () => void;
@@ -52,10 +52,10 @@ export const useScrapeStore = create<ScrapeStore>()(
         });
       },
       startScrapping: async () => {
-        const folders = get().folders;
-        await invoke("scrape", {
-          folders,
-        });
+        // const folders = get().folders;
+        // await invoke("scrape", {
+        //   folders,
+        // });
       },
       getFolders: async () => {
         const folderPath = await open({

@@ -2,10 +2,6 @@ use serde::{Deserialize, Serialize};
 use std::fs::{self, metadata};
 use std::path::{Path, PathBuf};
 
-#[tauri::command]
-fn greet(name: &str) -> String {
-    format!("Hello, {}! You've been greeted from Rust!", name)
-}
 
 fn _list_files(vec: &mut Vec<PathBuf>, path: &Path) {
     if metadata(&path).unwrap().is_dir() {
@@ -54,7 +50,6 @@ pub fn run() {
         .plugin(tauri_plugin_fs::init())
         .plugin(tauri_plugin_store::Builder::new().build())
         .plugin(tauri_plugin_opener::init())
-        .invoke_handler(tauri::generate_handler![greet])
         .invoke_handler(tauri::generate_handler![list_folders])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
