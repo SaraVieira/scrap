@@ -6,6 +6,11 @@ import { Button } from "./ui/button"
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip"
 import { useMemo } from "react"
 
+function capitalizeFirstLetter(val: string) {
+  return String(val).charAt(0).toUpperCase() + String(val).slice(1)
+}
+
+
 export default function FolderMapper({ nextStep }: { nextStep: () => void }) {
   const { folders } = useScrapeStore()
 

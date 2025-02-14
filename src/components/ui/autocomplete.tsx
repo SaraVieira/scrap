@@ -101,13 +101,13 @@ export const AutoComplete = ({
           onFocus={() => setOpen(true)}
           placeholder={placeholder}
           disabled={disabled}
-          className="text-base"
+          className="text-base capitalize"
         />
       </div>
       <div className="relative mt-1">
         <div
           className={cn(
-            "animate-in fade-in-0 zoom-in-95 absolute top-0 z-10 w-full rounded-xl bg-zinc-900 outline-none",
+            "animate-in fade-in-0 zoom-in-95 absolute top-0 z-10 w-full rounded-xl bg-zinc-900 outline-hidden",
             isOpen ? "block" : "hidden"
           )}
         >
@@ -122,25 +122,25 @@ export const AutoComplete = ({
             {options.length > 0 && !isLoading ? (
               <CommandGroup>
                 {options.map((option) => {
-                  const isSelected = selected?.value === option.value;
+                  const isSelected = selected?.value === option.value
                   return (
                     <CommandItem
                       key={option.value}
                       value={option.label}
                       onMouseDown={(event) => {
-                        event.preventDefault();
-                        event.stopPropagation();
+                        event.preventDefault()
+                        event.stopPropagation()
                       }}
                       onSelect={() => handleSelectOption(option)}
                       className={cn(
-                        "flex w-full items-center gap-2",
+                        "flex w-full items-center gap-2 capitalize",
                         !isSelected ? "pl-8" : null
                       )}
                     >
                       {isSelected ? <Check className="w-4" /> : null}
                       {option.label}
                     </CommandItem>
-                  );
+                  )
                 })}
               </CommandGroup>
             ) : null}
@@ -153,5 +153,5 @@ export const AutoComplete = ({
         </div>
       </div>
     </CommandPrimitive>
-  );
+  )
 };

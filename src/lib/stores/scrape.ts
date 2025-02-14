@@ -71,13 +71,13 @@ export const useScrapeStore = create<ScrapeStore>()(
             mapping:
               CONSOLES.find(
                 (console) =>
-                  console.folderNames.includes(
+                  console.foldernames.includes(
                     folder.name.toLocaleLowerCase()
                   ) ||
-                  console.folderNames.includes(folder.name.toLocaleUpperCase())
+                  console.foldernames.includes(folder.name.toLocaleUpperCase())
               ) || null,
           })),
-        });
+        })
       },
     }),
     { name: "scrape-storage", storage: createJSONStorage(() => sessionStorage) }
